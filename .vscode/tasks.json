@@ -1,0 +1,94 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Campus Marketplace backend",
+      "type": "shell",
+      "command": "${workspaceFolder}\\mvnw.cmd",
+      "args": [
+        "spring-boot:run"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PORT": "8081",
+          "SPRING_PROFILES_ACTIVE": "local"
+        }
+      },
+      "isBackground": true,
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "problemMatcher": {
+        "owner": "spring-boot",
+        "pattern": {
+          "regexp": "^(.+)$",
+          "message": 1
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": ".*",
+          "endsPattern": ".*Started .* in .* seconds.*"
+        }
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "dedicated",
+        "showReuseMessage": false
+      }
+    },
+    {
+      "label": "Start Campus Marketplace frontend",
+      "type": "shell",
+      "command": "npm.cmd",
+      "args": [
+        "run",
+        "dev"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "API_PORT": "8081",
+          "PREVIEW_PORT": "5173"
+        }
+      },
+      "isBackground": true,
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "problemMatcher": {
+        "owner": "campus-marketplace-preview",
+        "pattern": {
+          "regexp": "^(.+)$",
+          "message": 1
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": ".*",
+          "endsPattern": "Campus Marketplace preview: http://localhost:[0-9]+"
+        }
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "dedicated",
+        "showReuseMessage": false
+      }
+    },
+    {
+      "label": "Verify Java and Maven tooling",
+      "type": "shell",
+      "command": "${workspaceFolder}\\mvnw.cmd",
+      "args": [
+        "-version"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": false
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-labelledby="title desc">
+  <title id="title">Operating Systems textbook</title>
+  <desc id="desc">An orange hardback systems textbook shown at an isometric angle with a layered processor illustration.</desc>
+  <defs><linearGradient id="cover" x2="1" y2="1"><stop stop-color="#f08a45"/><stop offset="1" stop-color="#a8452e"/></linearGradient><linearGradient id="pages" x2="0" y2="1"><stop stop-color="#fffdf2"/><stop offset="1" stop-color="#d7cec1"/></linearGradient><filter id="shadow" x="-.3" y="-.3" width="1.7" height="1.8"><feGaussianBlur stdDeviation="17"/></filter></defs>
+  <ellipse cx="370" cy="458" rx="223" ry="41" fill="#703a2b" opacity=".2" filter="url(#shadow)"/>
+  <path d="m202 150 275-76 91 53v306l-279 78-91-54z" fill="#713826" opacity=".35"/>
+  <path d="m182 136 275-77 92 54v306l-279 78-91-54z" fill="url(#pages)"/>
+  <path d="m457 59 92 54v306l-92-54z" fill="#b8a596"/>
+  <path d="m182 136 275-77v306l-279 78z" fill="url(#cover)"/>
+  <path d="m182 136 19 13v278l-19 16z" fill="#913d2b"/>
+  <text x="223" y="236" fill="#fff8e9" font-family="Arial,sans-serif" font-size="29" font-weight="700" transform="rotate(-16 223 236)">OPERATING</text>
+  <text x="223" y="270" fill="#fff8e9" font-family="Arial,sans-serif" font-size="29" font-weight="700" transform="rotate(-16 223 270)">SYSTEMS</text>
+  <text x="225" y="301" fill="#ffe2c4" font-family="Arial,sans-serif" font-size="16" letter-spacing="2" transform="rotate(-16 225 301)">CONCEPTS &amp; DESIGN</text>
+  <g transform="translate(319 365) rotate(-16)"><path d="m0-51 51 29v58L0 65l-51-29v-58z" fill="#8e3e30" stroke="#ffe2c4" stroke-width="3"/><path d="m0-33 35 20v40L0 47l-35-20v-40z" fill="#263e4a" stroke="#f6d1a9" stroke-width="3"/><path d="m0-15 19 11v23L0 30l-19-11V-4z" fill="#70c3b0"/><path d="m-51-29-20-12m20 35-28-16m28 43-20-12m122-38 22-13m-22 36 29-17m-29 42 22-13M-10-57v-19m31 37 16-18m-84 4-14-18" stroke="#ffead0" stroke-width="4"/></g>
+  <text x="226" y="447" fill="#fff0dc" font-family="Arial,sans-serif" font-size="14" letter-spacing="2" transform="rotate(-16 226 447)">COMPUTER SCIENCE EDITION</text>
+</svg>

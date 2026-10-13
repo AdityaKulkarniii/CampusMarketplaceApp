@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-labelledby="title desc">
+  <title id="title">Database Systems textbook</title>
+  <desc id="desc">A navy blue database textbook shown in three dimensions with a bright relational database diagram.</desc>
+  <defs><linearGradient id="cover" x2="1" y2="1"><stop stop-color="#316fa5"/><stop offset="1" stop-color="#173a68"/></linearGradient><linearGradient id="pages" x2="0" y2="1"><stop stop-color="#fffef4"/><stop offset="1" stop-color="#cbd5d6"/></linearGradient><filter id="shadow" x="-.3" y="-.3" width="1.7" height="1.8"><feGaussianBlur stdDeviation="17"/></filter></defs>
+  <ellipse cx="371" cy="458" rx="225" ry="42" fill="#1a3557" opacity=".2" filter="url(#shadow)"/>
+  <path d="m198 151 278-77 93 54v306l-280 78-91-54z" fill="#122d50" opacity=".35"/>
+  <path d="m180 137 278-78 92 54v306l-279 78-91-54z" fill="url(#pages)"/>
+  <path d="m458 59 92 54v306l-92-54z" fill="#9caeb6"/>
+  <path d="m180 137 278-78v306l-279 78z" fill="url(#cover)"/>
+  <path d="m180 137 19 13v277l-19 16z" fill="#1b426b"/>
+  <text x="222" y="235" fill="#f3f7ff" font-family="Arial,sans-serif" font-size="30" font-weight="700" transform="rotate(-16 222 235)">DATABASE</text>
+  <text x="222" y="270" fill="#f3f7ff" font-family="Arial,sans-serif" font-size="30" font-weight="700" transform="rotate(-16 222 270)">SYSTEMS</text>
+  <text x="225" y="301" fill="#b9e8ff" font-family="Arial,sans-serif" font-size="16" letter-spacing="2" transform="rotate(-16 225 301)">SQL · DATA · DESIGN</text>
+  <g transform="translate(330 379) rotate(-16)" fill="none" stroke="#8cdeea" stroke-width="4"><rect x="-90" y="-42" width="58" height="56" rx="8"/><rect x="28" y="-42" width="58" height="56" rx="8"/><rect x="-32" y="51" width="64" height="51" rx="8"/><path d="M-32-15h60m-30 29v37m0-82 43 40"/><circle cx="-61" cy="-22" r="4" fill="#fff"/><circle cx="57" cy="-22" r="4" fill="#fff"/><circle cy="76" r="4" fill="#fff"/></g>
+  <text x="224" y="447" fill="#d8f6ff" font-family="Arial,sans-serif" font-size="14" letter-spacing="2" transform="rotate(-16 224 447)">COMPUTER SCIENCE EDITION</text>
+</svg>

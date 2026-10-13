@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-labelledby="title desc">
+  <title id="title">A4 printer paper, 500 sheets</title>
+  <desc id="desc">A clearly visible ream of white A4 paper shown in three dimensions, with individual page edges and an A4 label.</desc>
+  <defs><linearGradient id="top" x2="1" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#e8edf0"/></linearGradient><linearGradient id="side" x2="1" y2="1"><stop stop-color="#dce3e6"/><stop offset="1" stop-color="#aebdc5"/></linearGradient><linearGradient id="label" x2="1" y2="1"><stop stop-color="#e2f1ee"/><stop offset="1" stop-color="#b6d9d4"/></linearGradient><filter id="shadow" x="-.3" y="-.3" width="1.7" height="1.8"><feGaussianBlur stdDeviation="18"/></filter></defs>
+  <ellipse cx="372" cy="433" rx="230" ry="48" fill="#344a54" opacity=".2" filter="url(#shadow)"/>
+  <g transform="translate(87 45)">
+    <path d="m209 63 302 0 99 66v275l-301 0-100-65z" fill="#b6c3c9"/>
+    <path d="m209 63 302 0 99 66-301 2z" fill="url(#top)" stroke="#d2dce0" stroke-width="3"/>
+    <path d="m209 70 302 0 99 66-301 2z" fill="#fcfdfc"/>
+    <path d="m209 78 302 0 99 66-301 2z" fill="#f4f7f7"/>
+    <path d="m209 86 302 0 99 66-301 2z" fill="#fff"/>
+    <path d="m209 94 302 0 99 66-301 2z" fill="#f2f5f5"/>
+    <path d="m209 102 302 0 99 66-301 2z" fill="#fff"/>
+    <path d="m209 110 302 0 99 66-301 2z" fill="url(#top)"/>
+    <path d="m209 116 302 0 99 66-1 186-301 0-99-66z" fill="url(#side)"/>
+    <path d="m209 116 302 0 0 251-302 0z" fill="#fff" stroke="#d9e0e2" stroke-width="2"/>
+    <path d="m511 116 99 66-1 186-98-1z" fill="#d0dbe0"/>
+    <path d="m209 245 302 0v90l-302 0z" fill="url(#label)"/>
+    <path d="m511 245 99-63v89l-99 64z" fill="#91bdb8"/>
+    <path d="m229 263 103 0v51l-103 0z" fill="#fff" opacity=".84"/>
+    <text x="244" y="300" fill="#205c5a" font-family="Arial,sans-serif" font-size="32" font-weight="800">A4</text>
+    <text x="352" y="278" fill="#245653" font-family="Arial,sans-serif" font-size="19" font-weight="700">COPY PAPER</text>
+    <text x="352" y="307" fill="#47706d" font-family="Arial,sans-serif" font-size="16">500 sheets · 80 gsm</text>
+    <text x="230" y="349" fill="#829197" font-family="Arial,sans-serif" font-size="12" letter-spacing="2">210 × 297 mm</text>
+    <path d="m209 367 302 0 99-1" fill="none" stroke="#92a4aa" stroke-width="3"/>
+  </g>
+</svg>
