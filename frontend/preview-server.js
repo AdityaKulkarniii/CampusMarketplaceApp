@@ -2,7 +2,7 @@ const http = require("node:http");
 const fs = require("node:fs");
 const path = require("node:path");
 
-const root = path.join(__dirname, "src", "main", "resources", "static");
+const root = path.join(__dirname, "static");
 let port = Number(process.env.PREVIEW_PORT || 5173);
 const contentTypes = { ".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg", ".webp": "image/webp" };
 
@@ -15,7 +15,7 @@ const server = http.createServer((request, response) => {
     });
     upstream.on("error", () => {
       response.writeHead(503, { "Content-Type": "application/json; charset=utf-8" });
-      response.end(JSON.stringify({ message: "Spring Boot API is not running. Start it with mvn spring-boot:run." }));
+      response.end(JSON.stringify({ message: "Spring Boot API is not running. Run the Maven wrapper from the backend folder." }));
     });
     request.pipe(upstream);
     return;

@@ -2,10 +2,17 @@
 
 A student-to-student marketplace based on the supplied project abstract. The browser app is served by Spring Boot and uses REST endpoints, JWT authentication, and MySQL persistence.
 
+## Project layout
+
+- `frontend/` contains the browser app, product images, and static preview server.
+- `backend/` contains the Spring Boot API, Maven build, and Maven wrapper.
+- `.vscode/` contains tasks that launch the frontend and backend from their folders.
+
 ## Requirements
 
 - Java 17 or later
 - Maven 3.8 or later (or use the included `mvnw.cmd`)
+- Node.js 18 or later, for the optional frontend preview server
 - Optional: MySQL 8 or later, if you want to run against the MySQL profile instead of the default local H2 database
 
 The project defaults to the local H2 profile so it can boot without any external database setup. To use MySQL instead, set `SPRING_PROFILES_ACTIVE=mysql` and configure `DB_URL`, `DB_USER`, and `DB_PASSWORD`. Hibernate creates and updates the development schema on application startup. Listing prices are shown in Indian rupees (INR). Sellers can list items for sale or rent; rental listings include a per-day, per-week, or per-month price and a minimum rental duration. To enable a 360° product spin, sellers add up to eight photo URLs showing different angles; customers can drag the listing photo, use the arrow buttons, or choose a thumbnail to inspect the item.
@@ -14,21 +21,28 @@ The project defaults to the local H2 profile so it can boot without any external
 
 Open `D:\CampusMarketplaceApp` as the VS Code workspace and start the tasks from the VS Code Tasks menu. The bundled tasks detect Java and Maven automatically and launch the backend and frontend without hard-coded machine paths.
 
-To run the backend manually:
+To run the backend manually from the repository root:
 
 ```powershell
-mvnw.cmd spring-boot:run
+Set-Location backend
+.\mvnw.cmd spring-boot:run
 ```
 
-To start the frontend preview:
+To start the frontend preview in a separate terminal:
 
 ```powershell
+Set-Location frontend
 npm.cmd run dev
 ```
 
 Visit `http://localhost:8081` for the Spring Boot app and `http://localhost:5173` for the static preview. The preview proxy uses port 8081 by default.
 
-To build and run the checks, use `mvn test` or `mvnw.cmd test`.
+To build and run the checks:
+
+```powershell
+Set-Location backend
+.\mvnw.cmd test
+```
 
 ## Local accounts
 

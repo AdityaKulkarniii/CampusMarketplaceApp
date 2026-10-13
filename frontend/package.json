@@ -5,7 +5,6 @@
   "description": "Campus Marketplace frontend preview server",
   "scripts": {
     "dev": "node preview-server.js",
-    "backend": "mvnw.cmd spring-boot:run",
     "start": "node preview-server.js"
   }
 }

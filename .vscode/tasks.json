@@ -4,12 +4,12 @@
     {
       "label": "Start Campus Marketplace backend",
       "type": "shell",
-      "command": "${workspaceFolder}\\mvnw.cmd",
+      "command": "${workspaceFolder}\\backend\\mvnw.cmd",
       "args": [
         "spring-boot:run"
       ],
       "options": {
-        "cwd": "${workspaceFolder}",
+        "cwd": "${workspaceFolder}\\backend",
         "env": {
           "PORT": "8081",
           "SPRING_PROFILES_ACTIVE": "local"
@@ -48,7 +48,7 @@
         "dev"
       ],
       "options": {
-        "cwd": "${workspaceFolder}",
+        "cwd": "${workspaceFolder}\\frontend",
         "env": {
           "API_PORT": "8081",
           "PREVIEW_PORT": "5173"
@@ -81,12 +81,12 @@
     {
       "label": "Verify Java and Maven tooling",
       "type": "shell",
-      "command": "${workspaceFolder}\\mvnw.cmd",
+      "command": "${workspaceFolder}\\backend\\mvnw.cmd",
       "args": [
         "-version"
       ],
       "options": {
-        "cwd": "${workspaceFolder}"
+        "cwd": "${workspaceFolder}\\backend"
       },
       "isBackground": false
     }
