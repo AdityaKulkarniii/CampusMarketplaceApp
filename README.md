@@ -10,7 +10,12 @@ A student-to-student marketplace based on the supplied project abstract. The bro
 
 ## Deploy the frontend to Vercel
 
-The root-level `vercel.json` configures this monorepo for a static frontend deployment. In Vercel, keep the **Root Directory** set to the repository root (do not set it to `backend/` or `frontend/`); the config builds directly from `frontend/static` and rewrites frontend routes to `index.html`. Requests under `/api/` are excluded from the SPA rewrite.
+The repository can be deployed with either of these Vercel settings:
+
+- **Root Directory: `.` (repository root):** Vercel reads the root `vercel.json` and serves `frontend/static`.
+- **Root Directory: `frontend`:** Vercel reads `frontend/vercel.json` and serves `static`.
+
+Both configs rewrite frontend page requests to `index.html` while excluding `/api/` requests. Choose the matching root/output configuration in the Vercel project's **Settings → Build and Deployment**. Keep the framework preset as **Other** and leave the build and install commands blank for this plain HTML/CSS/JavaScript app.
 
 The Spring Boot backend is not deployed by this static Vercel configuration. Deploy `backend/` to a Java-capable host separately and configure a Vercel rewrite for `/api/:path*` to that backend's public URL, or update the frontend API base URL and configure the backend to allow the Vercel origin. Until the API is deployed and connected, the frontend can display sample listings but sign-in and data-changing operations will not work.
 
