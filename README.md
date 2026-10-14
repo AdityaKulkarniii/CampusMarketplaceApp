@@ -36,12 +36,13 @@ Set-Location backend
 .\mvnw.cmd spring-boot:run
 ```
 
-To start the frontend preview in a separate terminal:
+From the repository root, start the frontend preview:
 
 ```powershell
-Set-Location frontend
 npm.cmd run dev
 ```
+
+The equivalent command from inside the frontend folder is `npm.cmd run dev`. Do not run `npm install` to start the app; this frontend has no external npm dependencies.
 
 Visit `http://localhost:8081` for the Spring Boot app and `http://localhost:5173` for the static preview. The preview proxy uses port 8081 by default.
 

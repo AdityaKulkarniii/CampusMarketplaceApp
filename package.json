@@ -1,0 +1,11 @@
+{
+  "name": "campus-marketplace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Campus Marketplace monorepo commands",
+  "scripts": {
+    "dev": "node frontend/preview-server.js",
+    "start": "node frontend/preview-server.js",
+    "frontend": "npm --prefix frontend run dev"
+  }
+}
